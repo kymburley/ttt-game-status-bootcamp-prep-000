@@ -46,7 +46,7 @@ def won?(board)
     end
   end
 
-  if winning_combination.length ==3
+  if winning_combination.length == 3
     return winning_combination
   else
     return false
@@ -76,7 +76,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board).winning_combination[0] == "X"
+  if won?(board)[0] == "X"
     return "X"
   else
     return "O"
