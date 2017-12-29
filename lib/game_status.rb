@@ -77,7 +77,7 @@ end
 
 def winner(board)
   if draw?(board)
-    return nil
+    return ""
   else
     who_won = won?(board)
     index = who_won[0]
