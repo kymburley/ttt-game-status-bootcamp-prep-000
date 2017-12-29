@@ -45,7 +45,7 @@ def won?(board)
         winning_combination = win_combination
     end
   end
-  
+
   if winning_combination.length ==3
     return winning_combination
   else
