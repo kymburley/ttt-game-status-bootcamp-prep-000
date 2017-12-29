@@ -76,11 +76,11 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)[0] == "X"
+  if binding.local_variable_get(won?(board):winning_combination[0]) == "X"
     return "X"
   elsif won?(board)[0] == "O"
     return "O"
-  else
+  elsif draw?(board)
     return ""
   end
 end
