@@ -77,7 +77,7 @@ end
 
 def winner(board)
   who_won = won?(board)
-  
+
   if who_won[0] == "X"
     return "X"
   elsif who_won[0] == "O"
@@ -85,5 +85,5 @@ def winner(board)
   else
     return ""
   end
-    
+
 end
