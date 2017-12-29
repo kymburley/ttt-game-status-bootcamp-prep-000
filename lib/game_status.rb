@@ -76,7 +76,14 @@ def over?(board)
 end
 
 def winner(board)
-  if draw?(board)
+  who_won = won?(board)
+  
+  if who_won[0] == "X"
+    return "X"
+  elsif who_won[0] == "O"
+    return "O"
+  else
     return ""
   end
+    
 end
