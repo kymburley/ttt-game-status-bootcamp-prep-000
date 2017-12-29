@@ -29,6 +29,9 @@ def won?(board)
     return false
   end
 
+  won_flag = false
+  winning_combination = []
+
   #Do we have a winning combination?
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
@@ -40,8 +43,14 @@ def won?(board)
 
     if (position_1 == "X" && position_2 == "X" && position_3 == "X") ||
        (position_1 == "O" && position_2 == "O" && position_3 == "O")
-        return win_combination
+        won_flag = true
+        winning_combination = win_combination
     end
+  end
+  if winning_combination.length ==3
+    return winning_combination
+  else
+    return false
   end
 end
 
