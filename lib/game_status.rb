@@ -79,7 +79,10 @@ def winner(board)
   who_won = won?(board)
   index = who_won[0]
 
-  if board[index] == "X"
+  if who_won == false
+    return false
+  else
+    if board[index] == "X"
     return "X"
   elsif board[index] == "O"
     return "O"
