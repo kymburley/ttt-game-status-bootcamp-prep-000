@@ -76,15 +76,16 @@ def over?(board)
 end
 
 def winner(board)
-  who_won = won?(board)
-  index = who_won[0]
-
-  if board[index] == "X"
-    return "X"
-  elsif board[index] == "O"
-    return "O"
-  elsif draw?(board)
+  if draw?(board)
     return nil
-  end
+  else
+    who_won = won?(board)
+    index = who_won[0]
 
+    if board[index] == "X"
+      return "X"
+    else
+      return "O"
+    end
+  end
 end
