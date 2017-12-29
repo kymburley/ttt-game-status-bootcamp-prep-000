@@ -77,10 +77,11 @@ end
 
 def winner(board)
   who_won = won?(board)
-
-  if who_won[0] == "X"
+  index = who_won[0]
+  
+  if board[index] == "X"
     return "X"
-  elsif who_won[0] == "O"
+  elsif board[index] == "O"
     return "O"
   elsif draw?(board)
     return nil
