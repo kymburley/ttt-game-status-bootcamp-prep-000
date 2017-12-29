@@ -83,7 +83,7 @@ def winner(board)
   elsif who_won[0] == "O"
     return "O"
   elsif draw?(board)
-    return ""
+    return nil
   end
 
 end
