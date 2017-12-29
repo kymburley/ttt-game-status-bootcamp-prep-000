@@ -84,6 +84,7 @@ def winner(board)
   elsif board[index] == "O"
     return "O"
   else
-    return false
+    if who_won.empty?
+      return nil
   end
 end
