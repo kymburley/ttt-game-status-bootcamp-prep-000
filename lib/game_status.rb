@@ -82,7 +82,7 @@ def winner(board)
     return "X"
   elsif who_won[0] == "O"
     return "O"
-  else
+  elsif draw?(board)
     return ""
   end
 
