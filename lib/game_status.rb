@@ -79,7 +79,7 @@ def winner(board)
   who_won = won?(board)
   index = who_won[0]
 
-  if who_won == false
+  if who_won == []
     return nil
   elsif board[index] == "X"
     return "X"
