@@ -78,7 +78,7 @@ end
 def winner(board)
   who_won = won?(board)
   index = who_won[0]
-  
+
   if board[index] == "X"
     return "X"
   elsif board[index] == "O"
